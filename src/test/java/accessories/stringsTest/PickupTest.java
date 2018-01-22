@@ -45,4 +45,9 @@ public class PickupTest {
         assertEquals(9.99, pickup.getSellingPrice(), 0.001);
     }
 
+    @Test
+    public void pickupHaveAMarkup() {
+        assertEquals(66.50, pickup.markup(), 0.01);
+    }
+
 }
