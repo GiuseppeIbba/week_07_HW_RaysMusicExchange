@@ -11,7 +11,7 @@ public class ZampognaTest {
 
     @Before
     public void before() {
-        zampogna = new Zampogna ("ZM47P9", "Fornari Zampogne", "Classic", 524.66, 895.78,4, "3/4");
+        zampogna = new Zampogna ("ZM47P9", "Fornari Zampogne", "Classic", 524.66, 895.78, "boo boooo", 4, "3/4");
     }
 
     @Test
@@ -51,7 +51,7 @@ public class ZampognaTest {
 
     @Test
     public void zampognaCanPlay() {
-        assertEquals("typical zampogna sound: boo boooo", zampogna.play());
+        assertEquals("boo boooo", zampogna.play());
     }
 
     @Test

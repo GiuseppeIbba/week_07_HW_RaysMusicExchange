@@ -11,7 +11,7 @@ public class BanjoTest {
 
     @Before
     public void before() {
-        banjo = new Banjo("Luna Celtic Banjo", "Luna Guitars", "Classic", 275.00, 319.00, 5);
+        banjo = new Banjo("Luna Celtic Banjo", "Luna Guitars", "Classic", 275.00, 319.00, "twing", 5);
     }
 
     @Test
@@ -46,7 +46,7 @@ public class BanjoTest {
 
     @Test
     public void banjoCanPlay() {
-        assertEquals("typical banjo sound: twing", banjo.play());
+        assertEquals("twing", banjo.play());
     }
 
     @Test

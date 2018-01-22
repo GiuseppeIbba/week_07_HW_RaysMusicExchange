@@ -7,8 +7,8 @@ public class Bagpipe extends Instrument {
     private int numberOfDroneReeds;
     private String size;
 
-    public Bagpipe(String model, String brand, String type, double buyingPrice, double sellingPrice, int numberOfDroneReeds, String size) {
-        super(model, brand, type, buyingPrice, sellingPrice );
+    public Bagpipe(String model, String brand, String type, double buyingPrice, double sellingPrice, String sound, int numberOfDroneReeds, String size) {
+        super(model, brand, type, buyingPrice, sellingPrice, sound );
         this.numberOfDroneReeds = numberOfDroneReeds;
         this.size = size;
 
@@ -22,7 +22,7 @@ public class Bagpipe extends Instrument {
         return this.size;
     }
 
-    public String play() {
-        return "typical bagpipe sound: boo boooo";
-    }
+//    public String play() {
+//        return "typical bagpipe sound: boo boooo";
+//    }
 }

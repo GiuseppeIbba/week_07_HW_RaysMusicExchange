@@ -11,7 +11,7 @@ public class SaxophoneTest {
 
     @Before
     public void before() {
-        saxophone = new Saxophone("SAS701", "Sonata", "Herald saxophone", 766.98, 849.28, 3);
+        saxophone = new Saxophone("SAS701", "Sonata", "Herald saxophone", 766.98, 849.28, "pffff pffff", 3);
     }
 
     @Test
@@ -46,7 +46,7 @@ public class SaxophoneTest {
 
     @Test
     public void saxophoneCanPlay() {
-        assertEquals("typical saxophone sound: pffff pffff", saxophone.play());
+        assertEquals("pffff pffff", saxophone.play());
     }
 
     @Test

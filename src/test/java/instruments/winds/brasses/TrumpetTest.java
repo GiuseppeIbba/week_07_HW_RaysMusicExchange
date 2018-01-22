@@ -11,7 +11,7 @@ public class TrumpetTest {
 
     @Before
     public void before() {
-        trumpet = new Trumpet("Yamaha YTR-4435 II", "Yamaha", "Herald trumpet", 766.98, 849.28, 3);
+        trumpet = new Trumpet("Yamaha YTR-4435 II", "Yamaha", "Herald trumpet", 766.98, 849.28, "prrr prrrr", 3);
     }
 
     @Test
@@ -46,7 +46,7 @@ public class TrumpetTest {
 
     @Test
     public void trumpetCanPlay() {
-        assertEquals("typical trumpet sound: prrr prrrr", trumpet.play());
+        assertEquals("prrr prrrr", trumpet.play());
     }
 
     @Test

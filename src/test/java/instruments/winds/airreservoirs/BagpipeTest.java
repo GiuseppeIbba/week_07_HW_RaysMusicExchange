@@ -12,7 +12,7 @@ public class BagpipeTest{
 
     @Before
     public void before() {
-        bagpipe = new Bagpipe("DM1", "Rooseback's Bagpipes", "Great Highland Bagpipe", 105.86, 188.90, 3,"3/4");
+        bagpipe = new Bagpipe("DM1", "Rooseback's Bagpipes", "Great Highland Bagpipe", 105.86, 188.90, "boo boooo", 3,"3/4");
     }
 
     @Test
@@ -52,7 +52,7 @@ public class BagpipeTest{
 
     @Test
     public void bagpipeCanPlay() {
-        assertEquals("typical bagpipe sound: boo boooo", bagpipe.play());
+        assertEquals("boo boooo", bagpipe.play());
     }
 
     @Test

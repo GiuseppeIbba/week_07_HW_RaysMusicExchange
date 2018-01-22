@@ -8,8 +8,8 @@ public class Snare extends Instrument implements IPlayable {
     private String head;
     private String diameter;
 
-    public Snare(String model, String brand, String type, double buyingPrice, double sellingPrice, String head, String diameter) {
-        super(model, brand, type, buyingPrice, sellingPrice);
+    public Snare(String model, String brand, String type, double buyingPrice, double sellingPrice, String sound, String head, String diameter) {
+        super(model, brand, type, buyingPrice, sellingPrice, sound);
         this.head = head;
         this.diameter = diameter;
     }
@@ -22,7 +22,7 @@ public class Snare extends Instrument implements IPlayable {
         return this.diameter;
     }
 
-    public String play() {
-        return "typical snare sound: tum tum";
-    }
+//    public String play() {
+//        return "typical snare sound: tum tum";
+//    }
 }

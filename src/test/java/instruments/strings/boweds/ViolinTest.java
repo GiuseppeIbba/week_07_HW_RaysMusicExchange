@@ -11,7 +11,7 @@ public class ViolinTest {
 
     @Before
     public void before() {
-        violin = new Violin("Wessex XV Series", "The Wessex Violin Co.", "Pre-Baroque", 1854.48, 2375.00, 4, "4/4");
+        violin = new Violin("Wessex XV Series", "The Wessex Violin Co.", "Pre-Baroque", 1854.48, 2375.00, "zan zan", 4, "4/4");
     }
     @Test
     public void violinCanHaveModel() {
@@ -50,7 +50,7 @@ public class ViolinTest {
 
     @Test
     public void violinCanPlay() {
-        assertEquals("typical violin sound: zan zan", violin.play());
+        assertEquals("zan zan", violin.play());
     }
 
     @Test

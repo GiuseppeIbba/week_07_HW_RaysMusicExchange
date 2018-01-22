@@ -1,8 +1,8 @@
 package accessories;
 
-import interfaces.ISell;
+import interfaces.ISellable;
 
-public class Accessory implements ISell {
+public class Accessory extends Product implements ISellable   {
 
     private String partName;
     private String brand;
@@ -51,7 +51,7 @@ public class Accessory implements ISell {
         return markupPercentage;
     }
 
-    public double calcuateMarkup() {
+    public double calculateMarkup() {
         return markup();
     }
 

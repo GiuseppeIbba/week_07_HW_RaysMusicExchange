@@ -2,14 +2,14 @@ package instruments.strings.pluckeds;
 
 import instruments.Instrument;
 import interfaces.IPlayable;
-import interfaces.ISell;
+import interfaces.ISellable;
 
 public class Guitar extends Instrument implements IPlayable {
 
     private int numberOfStrings;
 
-    public Guitar(String model, String brand, String type, double buyingPrice, double sellingPrice,  int numberOfStrings) {
-        super(model, brand, type, buyingPrice, sellingPrice );
+    public Guitar(String model, String brand, String type, double buyingPrice, double sellingPrice, String sound, int numberOfStrings) {
+        super(model, brand, type, buyingPrice, sellingPrice, sound );
         this.numberOfStrings = numberOfStrings;
     }
 
@@ -18,8 +18,8 @@ public class Guitar extends Instrument implements IPlayable {
         return this.numberOfStrings;
     }
 
-    public String play() {
-        return "typical guitar sound: twang";
-    }
+//    public String play() {
+//        return "typical guitar sound: twang";
+//    }
 
 }

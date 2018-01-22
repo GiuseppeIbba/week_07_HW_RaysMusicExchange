@@ -11,7 +11,7 @@ public class CelloTest {
 
     @Before
     public void before() {
-        cello = new Cello("Rialto VC 730", "Stenton", "Laminated", 282.78, 434.00, 4, "1/4");
+        cello = new Cello("Rialto VC 730", "Stenton", "Laminated", 282.78, 434.00, "zan zan",4, "1/4");
     }
     @Test
     public void celloCanHaveModel() {
@@ -50,7 +50,7 @@ public class CelloTest {
 
     @Test
     public void celloCanPlay() {
-        assertEquals("typical cello sound: zan zan", cello.play());
+        assertEquals("zan zan", cello.play());
     }
 
     @Test

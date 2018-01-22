@@ -11,7 +11,7 @@ public class SnareTest {
 
     @Before
     public void before() {
-        snare = new Snare("Performance Snare", "Drum Workshop", "Marching Snare", 324.45, 389.00, "Remo USA", "14 X 5.5");
+        snare = new Snare("Performance Snare", "Drum Workshop", "Marching Snare", 324.45, 389.00, "tum tum", "Remo USA", "14 X 5.5");
     }
 
     @Test
@@ -51,7 +51,7 @@ public class SnareTest {
 
     @Test
     public void snareCanPlay() {
-        assertEquals("typical snare sound: tum tum", snare.play());
+        assertEquals("tum tum", snare.play());
     }
 
     @Test
