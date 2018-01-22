@@ -39,7 +39,7 @@ public class Instrument implements ISell {
         return this.sellingPrice;
     }
 
-    public double markup() {
+    public static double markup() {
         double margin = this.getSellingPrice() - this.getBuyingPrice();
         double markup = (margin / this.getBuyingPrice()) * 100;
         double markupPercentage = Math.round(markup * 100.0) / 100.0;
@@ -49,4 +49,5 @@ public class Instrument implements ISell {
     public double calcuateMarkup() {
         return markup();
     }
+
 }
